@@ -40,3 +40,5 @@ const reducer = (oldState = initialState, action) => {
     }
   }
 };
+
+export { reducer };

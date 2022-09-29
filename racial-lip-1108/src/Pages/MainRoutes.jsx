@@ -6,4 +6,4 @@ const MainRoutes = () => {
   )
 }
 
-export default MainRoutes
+export default MainRoutes;
