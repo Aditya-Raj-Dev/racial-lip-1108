@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { Link, Box, Button, Input, Stack, Text } from "@chakra-ui/react";
-// import {useNavigate} from "react-router-dom";
+
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  // const navigate = useNavigate()
 
   return (
     <Stack w="100%">
