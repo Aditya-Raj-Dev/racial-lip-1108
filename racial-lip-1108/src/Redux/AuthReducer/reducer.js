@@ -1,44 +1,56 @@
 import * as types from "./actionTypes";
 
-const initialState = {
+const intialState = {
   isAuth: false,
   token: "",
-  isAuthLoading: false,
-  isAuthError: false,
+  isError: false,
+  isLoading: false,
 };
-
-const reducer = (oldState = initialState, action) => {
+export const reducer = (state = intialState, action) => {
   const { type, payload } = action;
+
   switch (type) {
-    case types.USER_LOGIN_REQUEST: {
+    case types.LOGIN_REQUEST: {
       return {
-        ...oldState,
-        isAuthLoading: true,
+        ...state,
+        isLoading: true,
       };
     }
-
-    case types.USER_LOGIN_SUCCESS: {
-      return {
-        ...oldState,
-        isAuthLoading: false,
-        isAuth: true,
-        token: payload,
-      };
+    case types.LOGIN_SUCCESS: {
+      return { ...state, isLoading: false, isAuth: true, token: payload.id };
     }
-
-    case types.USER_LOGIN_FAILURE: {
+    case types.LOGIN_FAILURE: {
       return {
-        ...oldState,
-        isAuthLoading: false,
-        isAuthError: true,
+        ...state,
+        isLoading: false,
+        isError: true,
+        token: "",
         isAuth: false,
+      };
+    }
+    case types.LOGOUT_REQUEST: {
+      return {
+        ...state,
+        isLoading: true,
+      };
+    }
+    case types.LOGOUT_SUCCESS: {
+      return {
+        ...state,
+        isAuth: false,
+        isLoading: false,
+        isError: false,
         token: "",
       };
     }
+    case types.LOGOUT_FAILURE: {
+      return {
+        ...state,
+        isError: true,
+      };
+    }
     default: {
-      return oldState;
+      return state;
     }
   }
 };
-
-export { reducer };

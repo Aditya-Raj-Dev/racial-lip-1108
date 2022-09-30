@@ -9,13 +9,57 @@ import {
   FormHelperText,
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
-
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import * as types from '../Redux/AuthReducer/actionTypes'
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [err, setErr] = useState("");
+  const [alertActive, setAlertActive] = useState(false);
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log("email", email, "password", password);
 
+  // validating the email using email regex
+  const checkValidEmail = (e) => {
+    setEmail(e.target.value);
+    if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(email) === false) {
+      setErr("Please Enter the valid Email"); // show the error of writing email is valid or not
+    } else {
+      setErr(""); // if email is valid then don't show error
+      return;
+    }
+  };
+  // check the user is existed or not
+  const checkUser = (userData, email, pwd) => {
+    let user = userData.find(
+      (user) => user.email === email && user.pwd === pwd
+    );
+    if (user) return user;
+  };
+
+  // submitting the form
+  const handleSubmit = (e) => {
+    dispatch({ type: types.LOGIN_REQUEST });
+    e.preventDefault();
+
+    axios
+      .get("http://localhost:8080/users")
+      .then((res) => {
+        dispatch({
+          type: types.LOGIN_SUCCESS,
+          payload: checkUser(res.data, email, pwd),
+        });
+        // navigate("/signup");
+
+      })
+      .catch((err) =>
+        dispatch({ type: types.LOGIN_FAILURE, payload: err.message })
+      );
+    if (alertActive) {
+      setAlertActive(false);
+    } else setAlertActive(true);
+  };
   return (
     <Box
       style={{
@@ -46,17 +90,16 @@ const Login = () => {
               value={email}
               placeholder="enter email address"
               border={"none"}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => checkValidEmail(e)}
             />
           </Flex>
           <Flex marginBottom={"10px"}>
             <FormLabel>Password:</FormLabel>
             <Input
               type="password"
-              value={password}
               placeholder="enter password"
               border={"none"}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPwd(e.target.value)}
             />
           </Flex>
           <Button
@@ -64,6 +107,7 @@ const Login = () => {
             p={"10px 150px"}
             marginBottom={"10px"}
             color={"white"}
+            onClick={(e) => handleSubmit(e)}
           >
             Sign in
           </Button>

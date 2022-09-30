@@ -1,12 +1,45 @@
 import React from "react";
 import { useState } from "react";
 import { Link, Box, Button, Input, Stack, Text } from "@chakra-ui/react";
-
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [err, setErr] = useState("");
+const [status,setStatus] = useState("")
+  const navigate = useNavigate();
+  // checking the email is valid or not with email regex
+  const checkValidEmail = (e) => {
+    setEmail(e.target.value);
+    if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(email) === false) {
+      setErr("Please Enter the valid Email"); // show the error of writing email
+    } else {
+      setErr(""); // if email is valid then don't show error
+      return;
+    }
+  };
+  console.log(firstName, lastName, pwd, email);
+  // submit the user details to the database;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // checking the feilds are filled or not if feild are filled then post in to the database
+    if (firstName !== "" || email !== "" || pwd !== "") {
+      axios
+        .post("http://localhost:8080/users", {
+          firstName,
+          email,
+          pwd,
+        })
+        .then((res) => res.data)
+        .catch((err) => err.message);
+      setStatus(true);
+      alert("success");
+      navigate("/login");
+    } else setStatus(false);
+  };
 
   return (
     <Stack w="100%">
@@ -53,8 +86,9 @@ const Signup = () => {
               p="4"
               placeholder="Email"
               type="email"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => checkValidEmail(e)}
             />
+            {err ? <Text color="red">Please Enter Valid Email</Text> : null}
             <Input
               w="90%"
               m="auto"
@@ -91,7 +125,7 @@ const Signup = () => {
               p="4"
               placeholder="Password"
               type="password"
-              onChange={(e) => setPass(e.target.value)}
+              onChange={(e) => setPwd(e.target.value)}
             />
             <Button
               w="50%"
@@ -100,6 +134,7 @@ const Signup = () => {
               bg="rgb(1,191,189)"
               borderRadius="0"
               color="White"
+              onClick={(e) => handleSubmit(e)}
             >
               CREATE ACCOUNT
             </Button>

@@ -1,7 +1,16 @@
 {
-  "users" : [
-   
+  "users": [
+    {
+      "firstName": "",
+      "email": "adf",
+      "pwd": "",
+      "id": 1
+    },
+    {
+      "firstName": "ramana",
+      "email": "ramana@gmail.com",
+      "pwd": "1234",
+      "id": 2
+    }
   ]
-  
-  
 }
