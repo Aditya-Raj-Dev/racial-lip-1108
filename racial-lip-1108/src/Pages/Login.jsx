@@ -14,35 +14,23 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email & password) {
-      // action(store.dispatch)
-      // login(dispatch)
-      dispatch(login({ email, password })).then((res) => {
-        // do something
-        console.log("After successful login request");
-      });
-    }
-  };
+  console.log("email", email, "password", password);
 
   return (
     <Box
       style={{
         backgroundImage:
           "url('https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1300&dpr=1.5')",
+        height: "80vh",
+        // marginTop:'-70px',
+        // fontSize:'50px',
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
-      border={"3px solid red"}
-      width={"100%"}
-      height={"100%"}
-      // bgImage="url('../Image/ketto.png')"
-      bgPosition="center"
-      bgRepeat="no-repeat"
     >
       <Box
         m={"auto"}
         width={"400px"}
-        // border="1px solid red"
         display="flex"
         marginTop={"100px"}
         boxShadow="sm"
@@ -71,15 +59,20 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Flex>
-          <Button colorScheme="blue" p={"10px 15px"} marginBottom={"10px"}>
-            Login
+          <Button
+            bg="rgb(1,191,189)"
+            p={"10px 150px"}
+            marginBottom={"10px"}
+            color={"white"}
+          >
+            Sign in
           </Button>
           <Text>OR</Text>
           <Flex marginBottom={"10px"}>
             <FormLabel>Phone:</FormLabel>
             <Input type={"number"} placeholder={"enter phone number"} />
           </Flex>
-          <Button colorScheme="blue" p={"10px 15px"}>
+          <Button bg="rgb(1,191,189)" p={"10px 150px"} color={"white"}>
             Get Otp
           </Button>
         </FormControl>
