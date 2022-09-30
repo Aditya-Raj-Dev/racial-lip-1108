@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Footer from './Footer/Footer';
+import HowItWork from './How It Works Page/HowItWork';
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <HowItWork />
     </div>
   );
 }

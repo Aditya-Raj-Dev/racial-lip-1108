@@ -1,0 +1,169 @@
+.Main_Top_Div {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.Top_heading_h1 {
+  font-size: 36px;
+  line-height: 45px;
+  width: 683px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #039695;
+  margin: 25px 0;
+}
+.Secound_Main_Div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.img_2style {
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Form_dIv {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+}
+.ptag_1 {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px !important;
+  line-height: 30px;
+  color: #444;
+  margin: 0 5%;
+  text-align: center;
+}
+.spnastles {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  font-weight: normal;
+  display: block;
+}
+.imgdang {
+  width: 31px;
+  margin-bottom: 12px;
+  margin-left: 160px;
+  border-style: none;
+}
+.ptagasldj {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #039695;
+  margin-bottom: 15px;
+}
+.thrid_main_div3 {
+  margin-top: 100px;
+}
+.thridh2main {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.thridp2main {
+  text-align: center;
+  font-size: 17px;
+  color: #777;
+  line-height: 27px;
+  margin-top: 20px;
+}
+.youtubevedio_div_text {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.vediosidepart {
+  font-size: 26px;
+  line-height: 33px;
+  color: #444;
+  margin: 10px auto;
+  width: 95%;
+}
+.vediosidedesc {
+  font-size: 17px;
+  line-height: 27px;
+  color: #999;
+  margin: 10px auto;
+  width: 95%;
+}
+.spanasdlP {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #01bfbd;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.spanasldf {
+  text-align: left;
+  font-size: 17px;
+  line-height: 27px;
+  color: #444;
+}
+.paasldfhn {
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #999;
+}
+.ptagasdflk {
+  padding-top: 15px;
+  color: #444;
+}
+.crosal_lastasdlk {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 30px;
+}
+.crosaltopasjdf {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.crosalpnucey {
+  font-size: 17px;
+  color: #777;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.maincrosalcnwo {
+  margin-top: 50px;
+}
+.card {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  font-size: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqsessionwin {
+  margin-top: 50px;
+}
+.faqsession {
+  font-size: 20px;
+  line-height: 25px;
+  justify-content: left;
+  display: flex;
+  margin-bottom: 10px;
+}
