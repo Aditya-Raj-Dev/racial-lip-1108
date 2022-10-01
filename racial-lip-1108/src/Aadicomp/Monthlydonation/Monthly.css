@@ -1,0 +1,17 @@
+.montly{
+    padding: 2rem 1rem 1rem 2rem;
+    width:70%;
+    margin:auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 10rem;
+   
+}
+.whycause{
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width:980px) {
+    .monthly{
+        height:200px;
+    }
+  }

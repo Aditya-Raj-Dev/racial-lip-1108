@@ -1,0 +1,105 @@
+.fundraise{
+    width:79%;
+    margin: auto;
+    text-align: center;
+    
+}
+.timeheart{
+  display:flex;
+  justify-content: space-between;
+}
+.time,.heart{
+  display:inline-flex;
+  gap:5px;
+}
+.outof{
+  display: flex;
+  gap:5px;
+  margin-left: 10px;
+  color: grey;
+}
+
+.trend{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  font-size:medium;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.bold{
+    font-size:large;
+  font-weight: bold;
+  color: black;}
+#root {
+   height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 4px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:5px;
+ 
+     
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height:160px;
+  }
+  
+  .swiper {
+    width: 80%;
+    height: 450px;
+    margin: 20px auto;
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  

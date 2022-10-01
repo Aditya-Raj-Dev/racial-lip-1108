@@ -1,0 +1,39 @@
+.topbutton{
+     display: flex;
+     gap: 2rem;
+     justify-content: center;
+     margin-bottom: 2rem;
+}
+.topbutton button{
+    border-radius: 4px;
+}
+.lastbut{
+    display: inline-flex;
+    padding: 1rem;
+    gap:20px;
+}
+.lastbut p{
+    font-size: medium;
+    margin-right: 80px;
+    margin-top: 10px;
+
+}
+.lastbut button{
+    border-radius: 30px;
+    padding: 1rem;
+}
+.mainbut{
+    width:69%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+@media screen and (max-width:980px) {
+    .mainbut{
+        width:100%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .lastbut{
+    width: 100%;
+    }
+  }

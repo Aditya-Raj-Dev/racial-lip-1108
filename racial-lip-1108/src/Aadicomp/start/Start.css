@@ -1,0 +1,42 @@
+.mobile{
+    display:flex;
+    justify-content: space-around;
+    margin: 0px 7rem 0px 16rem;
+}
+.head{
+    color: #069395;
+    margin-bottom: 1rem;
+}
+.detail{
+    margin: 7rem 0px 5rem 2rem
+}
+.detail p{
+    width: 80%;
+}
+.stimg{
+    margin-top: 6rem;
+height: 600px;
+}
+.video{
+    width: 310px;
+    margin-right: 10rem;
+}
+
+@media screen and (max-width:980px) {
+   .mobile{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   }
+   .detail p{
+    width: 120%;
+}
+.detail{
+    margin: 0rem 0px 0rem 0rem
+}
+.stimg{ margin-top: 6rem;
+height: 600px;
+width: 100px;
+
+}
+  }
