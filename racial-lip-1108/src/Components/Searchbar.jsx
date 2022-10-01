@@ -2,6 +2,7 @@ import React, { Children, useState } from "react";
 import { useEffect } from "react";
 import { Box, Input } from "@chakra-ui/react";
 import { $CombinedState } from "redux";
+import "./Searchbar.css"
 const Searchbar = ({ setQuery, suggestions }) => {
   const [inputText, setInputText] = useState("");
   const [activeOption, setActiveOption] = useState(0);
@@ -13,7 +14,7 @@ const Searchbar = ({ setQuery, suggestions }) => {
   useEffect(() => {
     setQuery(inputText);
   }, [inputText, setQuery]);
-
+  console.log(suggestions)
   return (
     <div>
       <Input
@@ -26,7 +27,8 @@ const Searchbar = ({ setQuery, suggestions }) => {
         flex={"1"}
       />
       {!!suggestions.length && (
-        <Box
+        <Box 
+        className="searchBar"
           border={"1px solid black"}
           display="flex"
           width={"800px"}
@@ -47,13 +49,19 @@ const Searchbar = ({ setQuery, suggestions }) => {
         >
           {suggestions.map((item, index) => {
             return (
-              <div
+              <div    className="result"
                 key={index}
                 onMouseOver={() => {
                   setActiveOption(index + 1);
                 }}
               >
-                {item}
+                <img src={item.imgUrl} alt="" />
+                <div>
+                <b>{item.price}</b>
+               <p>{item.name}</p>
+                {console.log(item)} 
+                </div>
+               
               </div>
             );
           })}

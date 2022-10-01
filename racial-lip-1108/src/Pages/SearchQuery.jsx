@@ -19,12 +19,12 @@ const SearchQuery = () => {
         const queryName = query.trim().toLocaleLowerCase();
         return item.name.toLowerCase().indexOf(queryName) !== -1 ? true : false;
       })
-      .map((item) => item.name);
+      .map((item) => item);
       console.log(newListOfSuggestions);
       setSuggestions(newListOfSuggestions);
     }
   }, [query]);
-
+   console.log(Fundrisers)
   return (
     <div>
       <h2>Search Bar</h2>

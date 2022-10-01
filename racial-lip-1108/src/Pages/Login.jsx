@@ -17,7 +17,7 @@ const Login = () => {
   const [pwd, setPwd] = useState("");
   const [err, setErr] = useState("");
   const [alertActive, setAlertActive] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   // validating the email using email regex
@@ -50,7 +50,7 @@ const Login = () => {
           type: types.LOGIN_SUCCESS,
           payload: checkUser(res.data, email, pwd),
         });
-        // navigate("/signup");
+        navigate("/");
 
       })
       .catch((err) =>
