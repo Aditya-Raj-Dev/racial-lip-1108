@@ -57,8 +57,8 @@ const Searchbar = ({ setQuery, suggestions }) => {
               >
                 <img src={item.imgUrl} alt="" />
                 <div>
-                <b>{item.price}</b>
                <p>{item.name}</p>
+                <b>{item.price}</b>
                 {console.log(item)} 
                 </div>
                
