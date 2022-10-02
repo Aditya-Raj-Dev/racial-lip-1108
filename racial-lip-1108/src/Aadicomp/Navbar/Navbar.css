@@ -1,0 +1,54 @@
+.navbar{
+   position: relative;
+
+   display: block;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+     background-color: white;
+    padding:  10px 10px 10px 0px; 
+ }
+ .vl {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 20px;
+  }
+  .midnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap:15px;
+  }
+ .ketto{
+    color: #01BFBD;
+    font-family: sans-serif;
+ }
+ 
+ .rightnav{
+ display: flex;
+ align-items: center;
+ gap:20px;
+ }
+ .logo{
+    align-items: center;
+    margin-top:12px
+ }
+ .media{
+    height: 30px;
+    width: 30px;
+    display: none;
+ }
+
+ @media screen and (max-width:980px) {
+    .midnav,.rightnav{
+      display: none;
+    }
+    .media{
+        display: block;
+    }
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 1rem 0px 1rem;
+    }
+  }

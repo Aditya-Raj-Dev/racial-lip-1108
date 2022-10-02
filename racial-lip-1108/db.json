@@ -1,19 +1,254 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "aadi_data":[
+      {
+          "id":1,
+          "image": "https://kettocdn.gumlet.io/media/campaign/652000/652511/image/wid33136d62bc078bdb028574781a8862d86e1c6e6b.jpg?w=320&dpr=1.3", 
+          "title": "Save Fathima’s Premature Twins. She Fought Hard To Become A Mother.",
+          "by": "by Family Friends",
+          "fund" :"₹ 4,21,30,716", 
+          "support":"22046",
+          "r_day":"21",
+          "out": 500000,
+          "value":30
+      },
+
+
+      {
+          "id":2,
+          "image": "https://kettocdn.gumlet.io/media/campaign/180000/180773/image/wid6089ceb85c0bd.jpeg?w=300&dpr=1.5", 
+          "title": "Feeding From Far-Ration Distribution Amid Lockdown",
+          "by": "by Pooja Reddy",
+          "fund" :"₹ 4,82,34,422 ", 
+          "support":"12610",
+          "r_day":"95",
+          "out": 800000,
+          "value":50
+      },
+      
+      {
+          "id":3,
+          "image": "https://kettocdn.gumlet.io/media/campaign/461000/461905/image/wid630b2cd585419.jpg?w=300&dpr=1.5", 
+          "title": "My Son Is Suffering From Liver & Both Eye Disease.",
+          "by": "by NAZRANA ANJUM",
+          "fund" :"₹ 20,14,314 ", 
+          "support":"3222",
+          "r_day":"24",
+          "out": 3000000,
+          "value":70
+      },
+
+      {
+          "id":4,
+          "image": "https://kettocdn.gumlet.io/media/campaign/218000/218792/image/wid60326899153a5.jpeg?w=300&dpr=1.5", 
+          "title": "Help father and his 20-year old son, Father-Kidney transplant, Son- Bone marrow transplant. Please save the family",
+          "by": "by Mansi Singh",
+          "fund" :"₹1,57,88,00", 
+          "support":"12545",
+          "r_day":"3",
+          "out": 1800000,
+          "value":60
+
+      },
+
+      {
+
+          "id":5,
+          "image": "https://kettocdn.gumlet.io/media/campaign/193000/193220/image/wid608d82ab48f8a.png?w=300&dpr=1.5", 
+          "title": "Enrich Lives Foundation - Supporting the needy through the COVID-19 crisis!",
+          "by": "by Enrich Lives Foundation0",
+          "fund" :"₹ 1,15,86,119 ", 
+          "support":" 4741",
+          "r_day":"14",
+          "out": 80000000,
+          "value":15
+      },
+
+
+
+      {
+          "id":6,
+          "image": "https://kettocdn.gumlet.io/media/campaign/167000/167947/image/wid57beaf6d360986134ecdbd89657dd6a2b901a548.jpg?w=300&dpr=1.5", 
+          "title": "Wife Fears She Will Lose The Father Of Their 2-Year-Old Daughter To Brain Haemorrhage. Please Help.",
+          "by": "by Rachit Shrivastava",
+          "fund" :"₹ 1,10,91,72", 
+          "support":"9726",
+          "r_day":"13",
+          "out": 2400000,
+          "value":55
+
+      },
+
+
+
+      {
+          "id":7,
+          "image": "https://kettocdn.gumlet.io/media/campaign/372000/372126/image/wid01ce2a07f56735f26b62aac7c317696e57f1c3f9.png?w=300&dpr=1.5", 
+          "title": "Help 7yrs old Paarnikka beat Cancer",
+          "by": "by Rm Agarwal",
+          "fund" :"₹ 6,14,540 ", 
+          "support":"6006",
+          "r_day":"34",
+          "out": 800000,
+          "value":80
+      },
+
+
+      {
+          "id":8,
+          "image": "https://kettocdn.gumlet.io/media/campaign/281000/281759/image/wid60211afcc8a19.png?w=300&dpr=1.5", 
+          "title": "Offer A Helping Hand To Support Rubina Rodgers' Treatment",
+          "by": "by Sabapathy J",
+          "fund" :"₹7,88,421", 
+          "support":"3444",
+          "r_day":"50",
+          "out": 800000,
+          "value":90
+      },
+
+
+      {
+              "id":9,
+              "image": "https://kettocdn.gumlet.io/images/fundraiser-default-image.jpg?w=300&dpr=1.5", 
+              "title": "My 9 year only child is suffering From Brain tumor (Gliobastoma WHO Grade IV).",
+              "by": "by Bhautik Mehta",
+              "fund" :"₹ 58,79,355", 
+              "support":"1615",
+              "r_day":"80",
+              "out": 1000000,
+              "value":55
+
+
+
+      },
+
+      {
+          "id":10,
+          "image": "https://kettocdn.gumlet.io/media/campaign/277000/277698/image/wid5fa2de60a1557.jpeg?w=300&dpr=1.5", 
+          "title": "Schooling Special needs Children with Custom Education",
+          "by": "by Nithilyam Spastic Children ",
+          "fund" :"₹50,45,708 ", 
+          "support":"2535",
+          "r_day":"3",
+          "out": 20000000,
+          "value":35
+
+      },
+      {
+          "id":11,
+          "image": "https://kettocdn.gumlet.io/media/campaign/382000/382651/image/wid608aa5f303fa4.jpeg?w=300&dpr=1.5", 
+          "title": "!!!!Support Dharmes' bereaved Family !!!!Dharmes after bravely fighting against Covid",
+          "by": " by Shital B. Pardeshi",
+          "fund" :"₹ 47,02,429 ", 
+          "support":"3433",
+          "r_day":"40",
+          "out": 80000000,
+          "value":19
+      },
+
+
+      {
+          "id":12,
+          "image": "https://kettocdn.gumlet.io/media/campaign/526000/526156/image/wid61af02bba7faf.jpeg?w=300&dpr=1.5", 
+          "title": "My Mother Is Fighting For Her Life And We Need Your Support To Save Her",
+          "by": "by KARAN KUMAR SAHANI",
+          "fund" :"₹27,79,381", 
+          "support":"2574",
+          "r_day":"25",
+          "out": 4000000,
+          "value":75
+      },
+
+      {
+          "id":"13",
+          "image": "https://kettocdn.gumlet.io/media/campaign/251000/251350/image/wid631b8b3eb7053.png?w=300&dpr=1.5", 
+          "title": "My Father, A Doctor, Is Fighting For His Life And We Need Your Support To Save Him",
+          "by": "by Hridyapal Bhogal",
+          "fund" :"₹ 35,34,407", 
+          "support":"2111",
+          "r_day":"19",
+          "out": 5500000,
+          "value":81
+      },
+
+
+      {
+          "id":14,
+          "image": "https://kettocdn.gumlet.io/media/campaign/563000/563235/image/wid61deeb27332b0.jpeg?w=300&dpr=1.5", 
+          "title": "Help Ahmed Beat Cancer",
+          "by": "by Nawaf Yusuf",
+          "fund" :"₹ 34,02,226", 
+          "support":"1293",
+          "r_day":"33",
+          "out": 4000000,
+          "value":94
+      },
+
+
+      {
+          "id":15  ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/268000/268103/image/wid5fc4bc2e7ac40.jpeg?w=300&dpr=1.5", 
+          "title": "Help me to serve our people with a Rs.10 meal!",
+          "by": "by Kiran Verma",
+          "fund" :"₹ 31,39,658", 
+          "support":"1823",
+          "r_day":"12",
+          "out": 6000000,
+          "value":59
+      },
+      {
+          "id": 16 ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/642000/642377/image/wid511ba7060066c285a6e59968f2cf42464dbf1c64.jpg?w=300&dpr=1.5", 
+          "title": "Help Our 31-YO Brother-Viraj, Recover From Severe Traumatic Brain Injury Due To A Railway Accident. Please Help",
+          "by": "by Nikita Modi",
+          "fund" :"₹ 28,88,39 ", 
+          "support":"388",
+          "r_day":"33",
+          "out": 800000,
+          "value":25
+      },
+      {
+          "id": 17 ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/226000/226491/image/wid42e3d1054bdcab0b1b01856e52d8b81242421b01.png?w=300&dpr=1.5", 
+          "title": "",
+          "by": "by Shruti Srivastava",
+          "fund" :"₹ 15,99,19", 
+          "support":"2013",
+          "r_day":"Ended",
+          "out": 200000,
+          "value":88
+      },
+      {
+          "id":18  ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/51000/51609/image/wid5a81486a21476.jpeg?w=300&dpr=1.5", 
+          "title": "Help 5yr old Ganesh fight Cancer #againstALLodds",
+          "by": "by Arpita Shetty",
+          "fund" :"₹ 24,56,858", 
+          "support":"799",
+          "r_day":"71",
+          "out": 7000000,
+          "value":27
+      },
+      {
+          "id": 19 ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/360000/360604/image/widfa3c1f7efa040f292e47fbadc61294391c4a4582.jpg?w=300&dpr=1.5", 
+          "title": "Help 3-YO Munazza Beat Deadly Cancer & Get A Second Chance At Life!",
+          "by": "by namrata phulgirkar",
+          "fund" :"₹ 2,13,497", 
+          "support":"912",
+          "r_day":"59",
+          "out": 800000,
+          "value":28
+      },
+      {
+          "id": 20 ,
+          "image": "https://kettocdn.gumlet.io/media/campaign/206000/206957/image/wid6051f4b92df69.jpg?w=300&dpr=1.5", 
+          "title": "First wheelchair user from India to study at Oxford seeking funds",
+          "by": "by Pratishtha Deveshwar",
+          "fund" :"₹ 51,70,739 ", 
+          "support":"782",
+          "r_day":"33",
+          "out": 10000000,
+          "value":53
+      }      
+  ]
 }
