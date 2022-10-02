@@ -603,7 +603,6 @@ export default function HowItWork() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

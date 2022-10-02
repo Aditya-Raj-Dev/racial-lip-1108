@@ -5,12 +5,14 @@ import Footer from './Footer/Footer';
 import Allcomp from './Aadicomp/Allcomp/Allcomp';
 import Login from './Ramana/Pages/Login';
 import Ak_routes from './Ashish/Components/Ak_routes';
+import Navbar from './Aadicomp/Navbar/Navbar';
+import AllRoutes from './AllRoutes/AllRoutes';
 function App() {
   return (
     <div className="App">
-      {/* <Allcomp/> */}
-      {/* <Login /> */}
-      <Ak_routes />
+      <Navbar/>
+     <AllRoutes/>
+      <Footer/>
     </div>
   );
 }

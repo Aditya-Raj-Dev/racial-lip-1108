@@ -155,7 +155,7 @@ const [status,setStatus] = useState("")
             </Link>
           </Box>
         </Box>
-        <Box position="absolute" mt="650px" w="100%"></Box>
+        <Box  mt="650px" w="100%"></Box>
       </Box>
     </Stack>
   );

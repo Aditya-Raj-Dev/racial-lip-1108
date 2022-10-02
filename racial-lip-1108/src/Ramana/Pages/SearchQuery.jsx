@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useCallback } from "react";
 import { useState } from "react";
 import Searchbar from "../Components/Searchbar";
-import { Fundrisers } from "../../Ramana/Redux/Utils/Fundrisers";
+import { Fundrisers } from "../../Redux/Utils/Fundrisers";
 const SearchQuery = () => {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -26,11 +26,13 @@ const SearchQuery = () => {
   }, [query]);
    console.log(Fundrisers)
   return (
-    <div>
+    <center>
       <h2>Search Bar</h2>
       <h4>The search query is "{query}"</h4>
       <Searchbar setQuery={queryHandler} suggestions={suggestions} />
-    </div>
+      <br />
+      <br /><br />
+    </center>
   );
 };
 

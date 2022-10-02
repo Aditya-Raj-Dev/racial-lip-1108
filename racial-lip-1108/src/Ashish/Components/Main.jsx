@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { gethelp } from '../Appredux/appaction';
+import { gethelp } from '../../Redux/Appredux/appaction';
 import Ak_cards from './Ak_cards';
 
 
@@ -15,7 +15,6 @@ function Main() {
 
   
   const data1 = useSelector((state)=>state.AshishReducer.data)
-
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(gethelp())
