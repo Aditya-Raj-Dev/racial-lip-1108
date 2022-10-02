@@ -11,7 +11,6 @@ import Footer from '../../Footer/Footer'
 const Allcomp = () => {
   return (
     <div>
-   <Navbar/>
     <Topimg/>
      <br/>
      <TrendingFundraisers/>

@@ -49,7 +49,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
        <div className='logo'>
+        <Link to="/">
          <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=70&dpr=1.3" alt="" height="200px" width="70px"/>
+         </Link>
        </div>
        {/* 2nd Div */}
        <div className='midnav'>
@@ -64,16 +66,19 @@ const Navbar = () => {
           
            <>
           <Button
-            onClick={() => handleSizeClick(size)}
+            
             colorScheme="white"
             color="black"
             key={size}
             m={4}
            
-          ><GrSearch fontSize={20} marginright={20}/>search</Button>
+          ><GrSearch fontSize={20} marginright={20}/><Link to="/search"
+          >
+            search
+          </Link></Button>
        
   
-        <Modal onClose={onClose} size={5}  isOpen={isOpen}>
+        {/* <Modal onClose={onClose} size={5}  isOpen={isOpen}>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader><h2 className='ketto'>SEARCH KETTO</h2></ModalHeader>
@@ -92,7 +97,7 @@ const Navbar = () => {
               </div>
             </ModalBody>
           </ModalContent>
-        </Modal>
+        </Modal> */}
         </>
        </div>
        <div className='rightnav'>
@@ -112,7 +117,8 @@ const Navbar = () => {
         variant='outline'>
           Start a Fundraiser
       </Button>
-       <p>Sign In</p>
+       <p><Link to="/signin">
+        Sign In</Link></p>
        </div>
     <div className='media'>
     <Button ref={btnRef}  onClick={onOpen}>
@@ -132,12 +138,32 @@ const Navbar = () => {
           </DrawerHeader>
 
           <DrawerBody>
-            login
-            signup
+            <br/>
+            <div style={{backgroundColor:"rgb(244, 241, 241)"}}>
+               <Link to="/signin" onClick={onClose}>Sign Up</Link>
+            </div>
+
+          <br />
+          <div style={{backgroundColor:"rgb(244, 241, 241)"}}>
+          <Link to="/how" onClick={onClose}>How it Works</Link>
+          </div>
+          
+           <br />
+          <div style={{backgroundColor:"rgb(244, 241, 241)"}}>
+          <Link to="/fundraisers" onClick={onClose}>Fundraiser</Link>
+          </div>
+           <br />
+          <div style={{backgroundColor:"rgb(244, 241, 241)"}}>
+          <Link to="/signin" onClick={onClose}>Log in</Link>
+          </div>
+           
+           
+           
+    
           </DrawerBody>
 
           <DrawerFooter>
-            <Button variant='outline' mr={3} onClick={onClose}>
+            <Button variant='outline' mr={3} >
               Cancel
             </Button>
             <Button colorScheme='blue'>Save</Button>

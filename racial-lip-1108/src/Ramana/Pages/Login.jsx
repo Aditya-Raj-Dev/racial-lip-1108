@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import ketto from "../../Image/ketto.png";
-import { login } from "../Redux/AuthReducer/action";
+import { login } from "../../Redux/AuthReducer/action";
 import { Box, Flex, Input, Button, Text } from "@chakra-ui/react";
 import {
   FormControl,
@@ -11,7 +11,7 @@ import {
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import * as types from '../Redux/AuthReducer/actionTypes'
+import * as types from '../../Redux/AuthReducer/actionTypes'
 const Login = () => {
   const [email, setEmail] = useState("");
   const [pwd, setPwd] = useState("");
@@ -59,6 +59,8 @@ const Login = () => {
     if (alertActive) {
       setAlertActive(false);
     } else setAlertActive(true);
+
+    navigate("/")
   };
   return (
     <Box

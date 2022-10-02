@@ -17,6 +17,7 @@ const Searchbar = ({ setQuery, suggestions }) => {
   console.log(suggestions)
   return (
     <div>
+      <center>
       <Input
         type={"text"}
         value={inputText}
@@ -26,6 +27,7 @@ const Searchbar = ({ setQuery, suggestions }) => {
         fontSize={"20px"}
         flex={"1"}
       />
+      </center>
       {!!suggestions.length && (
         <Box 
         className="searchBar"
