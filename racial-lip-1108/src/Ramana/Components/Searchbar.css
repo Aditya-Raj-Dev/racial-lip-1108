@@ -1,0 +1,30 @@
+.result{
+     display: inline-flex;
+     margin-bottom: 0.8rem;
+}
+
+.result  img{
+ height:60px;
+ bottom: 3px;
+margin-right: 2rem;
+}
+.result b{
+    color: rgb(1,191,189);
+    padding:10px 0px 0px 0px;
+}
+.result p{
+    margin-top: 0px;
+    padding:0px 0px 10px 0px;
+}
+
+.searchBar{
+    display: flex;
+
+    flex:1;
+    
+
+    background:"${({active}) => active}" ;
+    /* active:{activeOption} */
+    /* backgroundC:{"${({active}) => active}"} */
+    /* cursor={"pointer"} */
+}
