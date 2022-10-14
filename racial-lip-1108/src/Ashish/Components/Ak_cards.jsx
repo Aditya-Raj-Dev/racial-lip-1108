@@ -1,4 +1,5 @@
 import React from 'react'
+import "./ashish.css"
 // import img1 from "../Image/image"
 import {useNavigate}  from "react-router-dom"
 function Ak_cards({item}) {
@@ -55,7 +56,7 @@ function Ak_cards({item}) {
 
 
 
-                   <div id="ak_end">
+                   <div>
 
                 <div style={{"display":"flex","gap":"0.5rem"}}>
 

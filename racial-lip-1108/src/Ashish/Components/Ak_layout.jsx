@@ -1,6 +1,7 @@
 import React from 'react'
 import Category from "./Category"
 import Main from "./Main";
+import "./ashish.css"
 
 function Ak_layout() {
   return (

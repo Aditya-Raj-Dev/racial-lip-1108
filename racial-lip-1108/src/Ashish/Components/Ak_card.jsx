@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import {useParams} from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import {FaFacebookSquare}  from "react-icons/fa";
+import "./ashish.css"
 
 
 
@@ -79,10 +80,12 @@ console.log(data);
                 
              <button id="ak_fb_btn">
 
-                <div style={{"display":"flex","fontSize":"large","gap":"2rem","margin":"auto"}}>
-                <FaFacebookSquare /> 
-                Spread the Word
-
+                <div style={{"display":"flex",gap:"2rem",paddingLeft:"10px"}}>
+                  <div>
+                    <FaFacebookSquare/>
+                  </div>
+                
+                   <h1>Spread the Word</h1> 
                     </div>
 
                 </button>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { gethelp } from '../../Redux/Appredux/appaction';
 import Ak_cards from './Ak_cards';
+import "./ashish.css"
 
 
 
