@@ -44,7 +44,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .get("http://localhost:8080/users")
+      .get("https://kitto-app.herokuapp.com/users")
       .then((res) => {
         dispatch({
           type: types.LOGIN_SUCCESS,

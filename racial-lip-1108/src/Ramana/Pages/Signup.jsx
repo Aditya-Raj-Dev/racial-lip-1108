@@ -28,7 +28,7 @@ const [status,setStatus] = useState("")
     // checking the feilds are filled or not if feild are filled then post in to the database
     if (firstName !== "" || email !== "" || pwd !== "") {
       axios
-        .post("http://localhost:8080/users", {
+        .post("https://kitto-app.herokuapp.com/users", {
           firstName,
           email,
           pwd,
