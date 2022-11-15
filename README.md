@@ -1,1 +1,1 @@
-# racial-lip-1108
+Ketto is India's best medical crowdfunding platform. Founded in 2012 by Varun Sheth, Kunal Kapoor and Zaheer Adenwala, we have assisted more than 2 Lakh individuals and Organisations in raising funds through Online Crowdfunding Campaigns across India. Ketto is India's First peer-to-peer crowdfunding platform.
